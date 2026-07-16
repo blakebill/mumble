@@ -62,6 +62,7 @@
 
 #ifdef Q_OS_WIN
 #	include "TaskList.h"
+#	include "WinSystemBackdrop.h"
 #endif
 
 #ifdef Q_OS_MAC
@@ -653,6 +654,36 @@ MainWindow::~MainWindow() {
 	delete Channel::get(Mumble::ROOT_CHANNEL_ID);
 }
 
+#ifdef Q_OS_WIN
+void MainWindow::refreshSystemBackdrop() {
+	bool darkMode = false;
+	switch (Global::get().s.styleType) {
+		case StyleType::Dark:
+			darkMode = true;
+			break;
+		case StyleType::Light:
+			break;
+		case StyleType::Auto:
+			darkMode = Themes::detectSystemDarkTheme();
+			break;
+	}
+
+	if (!WinSystemBackdrop::applyMica(this, darkMode)) {
+		return;
+	}
+
+	// Keep content surfaces opaque for readability while allowing Mica to
+	// show through the main window chrome.
+	const QString micaStyleSheet =
+		QLatin1String("QMainWindow#MainWindow { background-color: transparent; }\n"
+					  "QMenuBar#menubar { background-color: transparent; }\n"
+					  "QToolBar#qtIconToolbar { background-color: transparent; }");
+	if (!styleSheet().contains(micaStyleSheet)) {
+		setStyleSheet(styleSheet() + QLatin1Char('\n') + micaStyleSheet);
+	}
+}
+#endif
+
 void MainWindow::msgBox(QString msg) {
 	MessageBoxEvent *mbe = new MessageBoxEvent(msg);
 	QApplication::postEvent(this, mbe);
@@ -757,6 +788,10 @@ void MainWindow::hideEvent(QHideEvent *e) {
 
 void MainWindow::showEvent(QShowEvent *e) {
 	QMainWindow::showEvent(e);
+
+#ifdef Q_OS_WIN
+	refreshSystemBackdrop();
+#endif
 }
 
 void MainWindow::changeEvent(QEvent *e) {

@@ -157,6 +157,10 @@ bool Themes::apply() {
 
 	if (Global::get().mw) {
 		Global::get().mw->qteLog->document()->setDefaultStyleSheet(qApp->styleSheet());
+
+#ifdef Q_OS_WIN
+		Global::get().mw->refreshSystemBackdrop();
+#endif
 	}
 	return result;
 }

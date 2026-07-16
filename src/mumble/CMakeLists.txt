@@ -601,6 +601,8 @@ if(WIN32)
 		"TaskList.cpp"
 		"UserLockFile_win.cpp"
 		"WinGUIDs.cpp"
+		"WinSystemBackdrop.cpp"
+		"WinSystemBackdrop.h"
 		"os_early_win.cpp"
 		"os_win.cpp"
 
@@ -655,6 +657,7 @@ if(WIN32)
 	target_link_libraries(mumble_client_object_lib
 		PUBLIC
 			dbghelp.lib
+			dwmapi.lib
 			dxguid.lib
 			hid.lib
 			wintrust.lib

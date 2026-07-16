@@ -445,6 +445,11 @@ public:
 	MainWindow(QWidget *parent);
 	~MainWindow() Q_DECL_OVERRIDE;
 
+#ifdef Q_OS_WIN
+	/// Applies or refreshes the Windows 11 system backdrop for this window.
+	void refreshSystemBackdrop();
+#endif
+
 	// Implementation in Messages.cpp
 #define PROCESS_MUMBLE_TCP_MESSAGE(name, value) void msg##name(const MumbleProto::name &);
 	MUMBLE_ALL_TCP_MESSAGES
