@@ -670,6 +670,14 @@ Bu değer kanalda izin verilen azami kullanıcı sayısını ayarlamanıza izin 
         <translation>Mumble Hakkında</translation>
     </message>
     <message>
+        <source>Third-party Dependencies</source>
+        <translation>Üçüncü Taraf Bağımlılıklar</translation>
+    </message>
+    <message>
+        <source>Depending on the build configuration, your version of Mumble might not depend on all of the listed entries</source>
+        <translation>Derleme yapılandırmasına bağlı olarak, kullandığınız Mumble sürümü listelenen tüm girdilere bağımlı olmayabilir</translation>
+    </message>
+    <message>
         <source>&amp;About Mumble</source>
         <translation>Mumble &amp;Hakkında</translation>
     </message>
@@ -696,10 +704,6 @@ Bu değer kanalda izin verilen azami kullanıcı sayısını ayarlamanıza izin 
     <message>
         <source>Authors</source>
         <translation>Yazarlar</translation>
-    </message>
-    <message>
-        <source>Third-party license agreements</source>
-        <translation>Üçüncü taraf lisans anlaşmaları</translation>
     </message>
     <message>
         <source>For a list of authors, please see &lt;a href=&quot;https://github.com/mumble-voip/mumble/graphs/contributors&quot;&gt;https://github.com/mumble-voip/mumble/graphs/contributors&lt;/a&gt;</source>
@@ -1259,6 +1263,10 @@ Bu değer kanalda izin verilen azami kullanıcı sayısını ayarlamanıza izin 
         <translation>Ses Girdisi</translation>
     </message>
     <message>
+        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Settings -&gt; Privacy &amp; Security -&gt; Microphone.</source>
+        <translation>Mikrofona erişim reddedildi. Lütfen Sistem Ayarları -&gt; Gizlilik ve Güvenlik -&gt; Mikrofon bölümündeki ayarları değiştirerek Mumble&apos;ın mikrofonu kullanmasına izin verin.</translation>
+    </message>
+    <message>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
@@ -1281,10 +1289,6 @@ Bu değer kanalda izin verilen azami kullanıcı sayısını ayarlamanıza izin 
     <message>
         <source>%1 kbit/s (Audio %2, Position %4, Overhead %3)</source>
         <translation>%1 kbit/s (Ses %2, Konum %4, Yük %3)</translation>
-    </message>
-    <message>
-        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Preferences -&gt; Security &amp; Privacy -&gt; Privacy -&gt; Microphone.</source>
-        <translation>Mikrofona erişim reddedildi. Lütfen Sistem Tercihleri -&gt; Güvenlik ve Gizlilik -&gt; Gizlilik -&gt; Mikrofon&apos;daki ayarları değiştirerek Mumble&apos;ın mikrofonu kullanmasına izin verin.</translation>
     </message>
     <message>
         <source>Access to the microphone was denied. Please check that your operating system&apos;s microphone settings allow Mumble to use the microphone.</source>
@@ -3694,6 +3698,18 @@ Sunucunun etiketi. Bu, sunucu listenizde sunucunun ismidir ve istediğinizi seç
         <source>Cancel</source>
         <translation>İptal</translation>
     </message>
+    <message>
+        <source>Save password on this device</source>
+        <translation>Parolayı bu aygıtta kaydet</translation>
+    </message>
+    <message>
+        <source>Passwords can only be saved for servers in your favorites.</source>
+        <translation>Parolalar yalnızca favorilerinize eklediğiniz sunucular için kaydedilebilir.</translation>
+    </message>
+    <message>
+        <source>Passwords can only be saved for servers in your favorites</source>
+        <translation>Parolalar yalnızca favorilerinize eklediğiniz sunucular için kaydedilebilir</translation>
+    </message>
 </context>
 <context>
     <name>GlobalShortcut</name>
@@ -3748,10 +3764,6 @@ Sunucunun etiketi. Bu, sunucu listenizde sunucunun ismidir ve istediğinizi seç
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble can currently only use mouse buttons and keyboard modifier keys (Alt, Ctrl, Cmd, etc.) for global shortcuts.&lt;/p&gt;&lt;p&gt;If you want more flexibility, you can enable &lt;span style=&quot; font-style:italic;&quot;&gt;Access for assistive devices&lt;/span&gt; in the system&apos;s Accessibility preferences. However, please note that this change also potentially allows malicious programs to read what is typed on your keyboard.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble, genel kısayollar için şu anda sadece fare düğmelerini ve klavyenin birleştirici tuşlarını (Alt, Ctrl, Cmd vs.) kullanabilir.&lt;/p&gt;&lt;p&gt;Daha fazla esneklik istiyorsanız sisteminizin Erişilebilirlik tercihlerinde &lt;span style=&quot; font-style:italic;&quot;&gt;yardımcı aygıtlar için erişimi&lt;/span&gt; etkinleştirebilirsiniz. Ancak bunun potansiyel olarak zararlı programların klavyenizde ne yazıldığını okumalarına imkân verebileceğini unutmayın.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Open Accessibility Preferences</source>
-        <translation>Erişilebilirlik Tercihlerini Aç</translation>
     </message>
     <message>
         <source>Skip</source>
@@ -3864,10 +3876,6 @@ Bu seçenek seçilmediyse, yetkili programlarda Mumble&apos;ın genel kısayolla
 <context>
     <name>GlobalShortcutConfig</name>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble can currently only use mouse buttons and keyboard modifier keys (Alt, Ctrl, Cmd, etc.) for global shortcuts.&lt;/p&gt;&lt;p&gt;If you want more flexibility, you can add Mumble as a trusted accessibility program in the Security &amp; Privacy section of your Mac&apos;s System Preferences.&lt;/p&gt;&lt;p&gt;In the Security &amp; Privacy preference pane, change to the Privacy tab. Then choose Accessibility (near the bottom) in the list to the left. Finally, add Mumble to the list of trusted accessibility programs.&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Genel kısayollar için güncel olarak Mumble sadece fare düğmelerini ve klavyenin değiştirici düğmelerini (Alt, Ctrl, Cmd, vs.) kullanabilir.&lt;/p&gt;&lt;p&gt;Eğer daha fazla esneklik istiyorsanız Mac bilgisayarınızın Sistem Tercihlerinin Güvenlik ve Gizlilik bölümünde Mumble&apos;ı güvenilir erişilebilirlik programı olarak ekleyebilirsiniz. &lt;/p&gt;&lt;p&gt; Güvenlik ve Gizlilik panosunda Gizlilik semesine geçin. Ardından sol köşedeki listede Erişilebilirliği (alta yakın) seçin. Son olarak, Mumble&apos;ı güvenilir erişilebilirlik programlarına ekleyin.&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
         <source>Shortcuts</source>
         <translation>Kısayollar</translation>
     </message>
@@ -3895,6 +3903,10 @@ Bu seçenek seçilmediyse, yetkili programlarda Mumble&apos;ın genel kısayolla
     <message>
         <source>Shortcut input combinations</source>
         <translation>Kısayol girdi birleşmeleri</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble can currently only use mouse buttons and keyboard modifier keys (Alt, Ctrl, Cmd, etc.) for global shortcuts.&lt;/p&gt;&lt;p&gt;If you want more flexibility, you can add Mumble as a trusted accessibility program in the Privacy &amp; Security section of your Mac&apos;s System Settings.&lt;/p&gt;&lt;p&gt;In System Settings, open Privacy &amp; Security, then scroll to find Accessibility in the list. Finally, add Mumble to the list of trusted accessibility programs.&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble, şu anda genel kısayollar için yalnızca fare düğmelerini ve klavye değiştirici tuşlarını (Alt, Ctrl, Cmd vb.) kullanabilir.&lt;/p&gt;&lt;p&gt;Daha fazla esneklik istiyorsanız, Mac&apos;inizin Sistem Ayarlarındaki Gizlilik ve Güvenlik bölümünde Mumble&apos;ı güvenilir erişilebilirlik programı olarak ekleyebilirsiniz.&lt;/p&gt;&lt;p&gt;Sistem Ayarlarında Gizlilik ve Güvenlik bölümünü açın, ardından listede Erişilebilirlik seçeneğini bulun. Son olarak, Mumble&apos;ı güvenilir erişilebilirlik programları listesine ekleyin.&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Unassigned</source>
@@ -5207,11 +5219,19 @@ Bu ayar sadece yeni mesajlara uygulanır, zaten görüntülenmiş olanlar öncek
     </message>
     <message>
         <source>This controls whether Mumble will try to restore the window geometry and state from previous sessions on startup.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu ayar, Mumble&apos;ın başlatıldığında önceki oturumlardaki pencere boyutlarını ve durumunu geri yüklemeye çalışıp çalışmayacağını belirler.</translation>
     </message>
     <message>
         <source>Restore window geometry on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Başlangıçta pencere boyutlarını geri yükle</translation>
+    </message>
+    <message>
+        <source>Whether to change the local volume adjustment for the selected user when scrolling the mouse wheel up (increase) or down (decrease) while Control is pressed.</source>
+        <translation>Control tuşu basılıyken fare tekerleği yukarı (artırma) veya aşağı (azaltma) kaydırıldığında, seçilen kullanıcı için yerel ses ayarının değiştirilip değiştirilmeyeceği.</translation>
+    </message>
+    <message>
+        <source>CTRL + Scroll to change selected user&apos;s volume</source>
+        <translation>CTRL tuşuna basıp kaydırarak seçili kullanıcının ses seviyesini değiştir</translation>
     </message>
 </context>
 <context>
@@ -7460,14 +7480,6 @@ filtrelenmesi için ilave kanallar ekleyebilirsiniz.</translation>
         <translation>Sunucuya sertifika gönderme ve parolaları kaydetme (Seçenek durumu kaydedilmez).</translation>
     </message>
     <message>
-        <source>&lt;b&gt;This will suppress identity information from the client.&lt;/b&gt;&lt;p&gt;The client will not identify itself with a certificate, even if defined, and will not cache passwords for connections. This is primarily a test-option and is not saved.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Bu, istemciden kimlik verilerini kaldıracaktır.&lt;/b&gt;&lt;p&gt;İstemci kendisini varsa bile sertifika ile doğrulamayacak, ve bağlantılar için parolaları saklamayacaktır. Öncelikle bir test seçeneği olup, kaydedilmez.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>Suppress certificate and password storage</source>
-        <translation>Sertifika ve parola saklamasını kaldır</translation>
-    </message>
-    <message>
         <source>&lt;b&gt;Type of proxy to connect through.&lt;/b&gt;&lt;br /&gt;This makes Mumble connect through a proxy for all outgoing connections. Note: Proxy tunneling forces Mumble into TCP compatibility mode, causing all voice data to be sent via the control channel.</source>
         <translation>&lt;b&gt;Aracılığıyla bağlanılacak vekil tipi&lt;/b&gt;&lt;br /&gt;Bu ayar Mumble&apos;ın tüm dışarıya giden bağlantılar için bir vekil sunucudan geçmesini sağlar. Not: Vekil tüneli kullanmak, Mumble&apos;ı TCP uyumluluk kipine zorlar ve bu tüm ses verilerinin kontrol kanalından yollanmasına yol açar.</translation>
     </message>
@@ -7608,6 +7620,14 @@ Prevents the client from sending potentially identifying information about the o
     <message>
         <source>Proxy password</source>
         <translation>Vekil parolası</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;This will suppress identity information from the client.&lt;/b&gt;&lt;p&gt;The client will not identify itself with a certificate, even if defined. This is primarily a test-option and is not saved.&lt;/p&gt;</source>
+        <translation>&lt;b&gt;Bu, istemciden gelen kimlik bilgilerinin gizlenmesini sağlar.&lt;/b&gt;&lt;p&gt;İstemci, tanımlanmış olsa bile bir sertifika ile kimliğini belirtmez. Bu, esas olarak bir test seçeneğidir ve kaydedilmez.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <source>Suppress certificate information</source>
+        <translation>Sertifika bilgilerini gizle</translation>
     </message>
 </context>
 <context>
@@ -8583,8 +8603,8 @@ Bu dosyaları son sürümlerine güncellemek için aşağıdaki düğmeyi tıkla
         <translation>Varsayılan Aygıt</translation>
     </message>
     <message>
-        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Preferences -&gt; Security &amp; Privacy -&gt; Privacy -&gt; Microphone.</source>
-        <translation>Mikrofona erişim reddedildi. Lütfen Sistem Tercihleri -&gt; Güvenlik ve Gizlilik -&gt; Gizlilik -&gt; Mikrofon&apos;daki ayarları değiştirerek Mumble&apos;ın mikrofonu kullanmasına izin verin.</translation>
+        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Settings -&gt; Privacy &amp; Security -&gt; Microphone.</source>
+        <translation>Mikrofona erişim reddedildi. Lütfen Sistem Ayarları -&gt; Gizlilik ve Güvenlik -&gt; Mikrofon bölümündeki ayarları değiştirerek Mumble&apos;ın mikrofonu kullanmasına izin verin.</translation>
     </message>
     <message>
         <source>If enabled this tries to cancel out echo from the audio stream.</source>

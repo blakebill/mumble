@@ -17,25 +17,31 @@ class WASAPINotificationClient : public QObject, public IMMNotificationClient {
 	Q_OBJECT
 public:
 	/* IMMNotificationClient interface */
-	HRESULT STDMETHODCALLTYPE OnDefaultDeviceChanged(EDataFlow flow, ERole role, LPCWSTR pwstrDefaultDevice);
-	HRESULT STDMETHODCALLTYPE OnPropertyValueChanged(LPCWSTR pwstrDeviceId, const PROPERTYKEY key);
-	HRESULT STDMETHODCALLTYPE OnDeviceAdded(LPCWSTR pwstrDeviceId);
-	HRESULT STDMETHODCALLTYPE OnDeviceRemoved(LPCWSTR pwstrDeviceId);
-	HRESULT STDMETHODCALLTYPE OnDeviceStateChanged(LPCWSTR pwstrDeviceId, DWORD dwNewState);
-	HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, VOID **ppvInterface);
-	ULONG STDMETHODCALLTYPE AddRef();
-	ULONG STDMETHODCALLTYPE Release();
+	HRESULT STDMETHODCALLTYPE OnDefaultDeviceChanged(EDataFlow flow, ERole role, LPCWSTR pwstrDefaultDevice) override;
+	HRESULT STDMETHODCALLTYPE OnPropertyValueChanged(LPCWSTR pwstrDeviceId, const PROPERTYKEY key) override;
+	HRESULT STDMETHODCALLTYPE OnDeviceAdded(LPCWSTR pwstrDeviceId) override;
+	HRESULT STDMETHODCALLTYPE OnDeviceRemoved(LPCWSTR pwstrDeviceId) override;
+	HRESULT STDMETHODCALLTYPE OnDeviceStateChanged(LPCWSTR pwstrDeviceId, DWORD dwNewState) override;
+	HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, VOID **ppvInterface) override;
+	ULONG STDMETHODCALLTYPE AddRef() override;
+	ULONG STDMETHODCALLTYPE Release() override;
 
 	/* Enlist/Unlist functionality */
-	void enlistDefaultDeviceAsUsed(LPCWSTR pwstrDefaultDevice);
+	void incrementWantDefault();
+	void decrementWantDefault();
 
-	void enlistDeviceAsUsed(LPCWSTR pwstrDevice);
+	void enlistDefaultDeviceAsUsed(const QString &device);
+	void unlistDefaultDeviceAsUsed(const QString &device);
+
 	void enlistDeviceAsUsed(const QString &device);
+	void unlistDeviceAsUsed(const QString &device);
 
-	void unlistDevice(LPCWSTR pwstrDevice);
+	void enlistDeviceAsWanted(const QString &device);
+	void unlistDeviceAsWanted(const QString &device);
 
 	void clearUsedDefaultDeviceList();
-	void clearUsedDeviceLists();
+	void clearUsedDeviceList();
+	void clearWantedDeviceList();
 
 	/**
 	 * @return Singleton instance reference.
@@ -55,15 +61,20 @@ private:
 	void restartAudio();
 
 	/* _fu = Non locking versions */
-	void _clearUsedDeviceLists();
+	void _clearWantDefaultDeviceCount();
+	void _clearUsedDefaultDeviceList();
+	void _clearUsedDeviceList();
+	void _clearWantedDeviceList();
 	void _enlistDeviceAsUsed(const QString &device);
+	void _enlistDeviceAsWanted(const QString &device);
 
 	QStringList usedDefaultDevices;
 	QStringList usedDevices;
+	QStringList wantedDevices;
 	IMMDeviceEnumerator *pEnumerator;
 	LONG _cRef;
 	QMutex listsMutex;
-
+	std::atomic_int32_t wantDefaultCount = 0;
 signals:
 	void doResetAudio();
 };

@@ -670,6 +670,14 @@ This value allows you to set the maximum number of users allowed in the channel.
         <translation>Mumble 정보</translation>
     </message>
     <message>
+        <source>Third-party Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Depending on the build configuration, your version of Mumble might not depend on all of the listed entries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&amp;About Mumble</source>
         <translation>Mumble 정보(&amp;A)</translation>
     </message>
@@ -696,10 +704,6 @@ This value allows you to set the maximum number of users allowed in the channel.
     <message>
         <source>Authors</source>
         <translation>저자</translation>
-    </message>
-    <message>
-        <source>Third-party license agreements</source>
-        <translation>타사 라이선스 계약</translation>
     </message>
     <message>
         <source>For a list of authors, please see &lt;a href=&quot;https://github.com/mumble-voip/mumble/graphs/contributors&quot;&gt;https://github.com/mumble-voip/mumble/graphs/contributors&lt;/a&gt;</source>
@@ -1259,6 +1263,10 @@ This value allows you to set the maximum number of users allowed in the channel.
         <translation>오디오 입력</translation>
     </message>
     <message>
+        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Settings -&gt; Privacy &amp; Security -&gt; Microphone.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
@@ -1281,10 +1289,6 @@ This value allows you to set the maximum number of users allowed in the channel.
     <message>
         <source>%1 kbit/s (Audio %2, Position %4, Overhead %3)</source>
         <translation>%1 kbit/s (오디오 %2, 위치 %4, 오버헤드 %3)</translation>
-    </message>
-    <message>
-        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Preferences -&gt; Security &amp; Privacy -&gt; Privacy -&gt; Microphone.</source>
-        <translation>마이크의 접근이 거부되었습니다. 시스템 환경 설정 -&gt; 보안 및 개인 정보 -&gt; 개인 정보 -&gt; 마이크에서 설정을 변경하여 Mumble이 마이크를 사용하도록 허용하세요.</translation>
     </message>
     <message>
         <source>Access to the microphone was denied. Please check that your operating system&apos;s microphone settings allow Mumble to use the microphone.</source>
@@ -3694,6 +3698,18 @@ Label of the server. This is what the server will be named like in your server l
         <source>Cancel</source>
         <translation type="unfinished">취소</translation>
     </message>
+    <message>
+        <source>Save password on this device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Passwords can only be saved for servers in your favorites.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Passwords can only be saved for servers in your favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GlobalShortcut</name>
@@ -3748,10 +3764,6 @@ Label of the server. This is what the server will be named like in your server l
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble can currently only use mouse buttons and keyboard modifier keys (Alt, Ctrl, Cmd, etc.) for global shortcuts.&lt;/p&gt;&lt;p&gt;If you want more flexibility, you can enable &lt;span style=&quot; font-style:italic;&quot;&gt;Access for assistive devices&lt;/span&gt; in the system&apos;s Accessibility preferences. However, please note that this change also potentially allows malicious programs to read what is typed on your keyboard.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble은 현재 전역 단축키에 마우스 버튼과 키보드 한정자 키만 (Alt, Ctrl, Cmd 등) 사용할 수 있습니다.&lt;/p&gt;&lt;p&gt;더 많은 유연성을 원하면 시스템의 접근성 기본 설정에서 &lt;span style=&quot; font-style:italic;&quot;&gt;보조 장치 접근&lt;/span&gt;을 활성화 할 수 있습니다. 그러나 이러한 변경으로 인해 악성 프로그램이 키보드에 입력된 내용을 읽을 수도 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Open Accessibility Preferences</source>
-        <translation>접근성 환경 설정 열기</translation>
     </message>
     <message>
         <source>Skip</source>
@@ -3864,10 +3876,6 @@ Without this option enabled, using Mumble&apos;s global shortcuts in privileged 
 <context>
     <name>GlobalShortcutConfig</name>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble can currently only use mouse buttons and keyboard modifier keys (Alt, Ctrl, Cmd, etc.) for global shortcuts.&lt;/p&gt;&lt;p&gt;If you want more flexibility, you can add Mumble as a trusted accessibility program in the Security &amp; Privacy section of your Mac&apos;s System Preferences.&lt;/p&gt;&lt;p&gt;In the Security &amp; Privacy preference pane, change to the Privacy tab. Then choose Accessibility (near the bottom) in the list to the left. Finally, add Mumble to the list of trusted accessibility programs.&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble은 현재 전역 단축키에 마우스 버튼과 키보드 한정자 키만 (Alt, Ctrl, Cmd 등) 사용할 수 있습니다.&lt;/p&gt;&lt;p&gt;더 많은 유연성을 원한다면 Mac 시스템 환경 설정의 보안 및 개인 정보 부분에서 신뢰할 수 있는 접근성 프로그램으로 Mumble을 추가 할 수 있습니다.&lt;/p&gt;&lt;p&gt;보안 및 개인 정보 환경 설정 창에서 개인 정보 탭으로 변경합니다. 그런 다음 왼쪽 목록에서 접근성을 (아래쪽 근처) 선택합니다. 마지막으로 신뢰할 수 있는 접근성 프로그램 목록에 Mumble을 추가합니다.&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
         <source>Shortcuts</source>
         <translation>단축키</translation>
     </message>
@@ -3894,6 +3902,10 @@ Without this option enabled, using Mumble&apos;s global shortcuts in privileged 
     </message>
     <message>
         <source>Shortcut input combinations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble can currently only use mouse buttons and keyboard modifier keys (Alt, Ctrl, Cmd, etc.) for global shortcuts.&lt;/p&gt;&lt;p&gt;If you want more flexibility, you can add Mumble as a trusted accessibility program in the Privacy &amp; Security section of your Mac&apos;s System Settings.&lt;/p&gt;&lt;p&gt;In System Settings, open Privacy &amp; Security, then scroll to find Accessibility in the list. Finally, add Mumble to the list of trusted accessibility programs.&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5211,6 +5223,14 @@ The setting only applies for new messages, the already shown ones will retain th
     </message>
     <message>
         <source>Restore window geometry on startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Whether to change the local volume adjustment for the selected user when scrolling the mouse wheel up (increase) or down (decrease) while Control is pressed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>CTRL + Scroll to change selected user&apos;s volume</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7460,14 +7480,6 @@ the channel&apos;s context menu.</source>
         <translation>인증서를 서버로 보내지 않고 비밀번호를 저장하지 않습니다. (저장되지 않음).</translation>
     </message>
     <message>
-        <source>&lt;b&gt;This will suppress identity information from the client.&lt;/b&gt;&lt;p&gt;The client will not identify itself with a certificate, even if defined, and will not cache passwords for connections. This is primarily a test-option and is not saved.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;클라이언트의 정보를 숨깁니다.&lt;/b&gt;&lt;p&gt;클라이언트는 정의된 경우에도 인증서로 자신을 식별하지 않으며 연결에 대한 비밀번호를 저장하지 않습니다. 이 옵션은 주로 테스트 옵션이며 저장되지 않습니다.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>Suppress certificate and password storage</source>
-        <translation>인증서와 비밀번호 저장 금지</translation>
-    </message>
-    <message>
         <source>&lt;b&gt;Type of proxy to connect through.&lt;/b&gt;&lt;br /&gt;This makes Mumble connect through a proxy for all outgoing connections. Note: Proxy tunneling forces Mumble into TCP compatibility mode, causing all voice data to be sent via the control channel.</source>
         <translation>&lt;b&gt;연결할 프록시 유형입니다.&lt;/b&gt;&lt;br /&gt;Mumble이 모든 송신 연결을 프록시를 통해 연결합니다. 참고: 프록시 터널링은 Mumble을 TCP 호환 모드로 강제 전환하여 모든 음성 데이터가 제어 채널을 통해 전송되도록 합니다.</translation>
     </message>
@@ -7607,6 +7619,14 @@ Prevents the client from sending potentially identifying information about the o
     </message>
     <message>
         <source>Proxy password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;This will suppress identity information from the client.&lt;/b&gt;&lt;p&gt;The client will not identify itself with a certificate, even if defined. This is primarily a test-option and is not saved.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Suppress certificate information</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -8583,8 +8603,8 @@ To upgrade these files to their latest versions, click the button below.</source
         <translation>기본 장치</translation>
     </message>
     <message>
-        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Preferences -&gt; Security &amp; Privacy -&gt; Privacy -&gt; Microphone.</source>
-        <translation>마이크의 접근이 거부되었습니다. 시스템 환경 설정 -&gt; 보안 및 개인 정보 -&gt; 개인 정보 -&gt; 마이크에서 설정을 변경하여 Mumble이 마이크를 사용하도록 허용하세요.</translation>
+        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Settings -&gt; Privacy &amp; Security -&gt; Microphone.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>If enabled this tries to cancel out echo from the audio stream.</source>

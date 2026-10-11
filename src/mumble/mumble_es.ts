@@ -670,6 +670,14 @@ Este valor permite fijar el número máximo de usuarios permitidos en el canal. 
         <translation>Acerca de Mumble</translation>
     </message>
     <message>
+        <source>Third-party Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Depending on the build configuration, your version of Mumble might not depend on all of the listed entries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&amp;About Mumble</source>
         <translation>&amp;Acerca de Mumble</translation>
     </message>
@@ -696,10 +704,6 @@ Este valor permite fijar el número máximo de usuarios permitidos en el canal. 
     <message>
         <source>Authors</source>
         <translation>Autores</translation>
-    </message>
-    <message>
-        <source>Third-party license agreements</source>
-        <translation>Acuerdos de licencia de terceros</translation>
     </message>
     <message>
         <source>For a list of authors, please see &lt;a href=&quot;https://github.com/mumble-voip/mumble/graphs/contributors&quot;&gt;https://github.com/mumble-voip/mumble/graphs/contributors&lt;/a&gt;</source>
@@ -1259,6 +1263,10 @@ Este valor permite fijar el número máximo de usuarios permitidos en el canal. 
         <translation>Entrada de audio</translation>
     </message>
     <message>
+        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Settings -&gt; Privacy &amp; Security -&gt; Microphone.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
@@ -1281,10 +1289,6 @@ Este valor permite fijar el número máximo de usuarios permitidos en el canal. 
     <message>
         <source>%1 kbit/s (Audio %2, Position %4, Overhead %3)</source>
         <translation>%1 kbit/s (Audio %2, Posición %4, Carga adicional %3)</translation>
-    </message>
-    <message>
-        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Preferences -&gt; Security &amp; Privacy -&gt; Privacy -&gt; Microphone.</source>
-        <translation>El acceso al micrófono fue denegado. Por favor, permita a Mumble usar el micrófono cambiando los ajustes en Preferencias del sistema -&gt; Seguridad y Privacidad -&gt; Privacidad -&gt; Micrófono.</translation>
     </message>
     <message>
         <source>Access to the microphone was denied. Please check that your operating system&apos;s microphone settings allow Mumble to use the microphone.</source>
@@ -3086,7 +3090,7 @@ Are you sure you wish to replace your certificate?
     </message>
     <message>
         <source>Muted (self)</source>
-        <translation>Mudo (por sí mismo)</translation>
+        <translation>Silenciado (por sí mismo)</translation>
     </message>
     <message>
         <source>Deafened (self)</source>
@@ -3696,6 +3700,18 @@ Por favor informa a un desarrollador sobre el código de error: %1</translation>
         <source>Cancel</source>
         <translation type="unfinished">Cancelar</translation>
     </message>
+    <message>
+        <source>Save password on this device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Passwords can only be saved for servers in your favorites.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Passwords can only be saved for servers in your favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GlobalShortcut</name>
@@ -3750,10 +3766,6 @@ Por favor informa a un desarrollador sobre el código de error: %1</translation>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble can currently only use mouse buttons and keyboard modifier keys (Alt, Ctrl, Cmd, etc.) for global shortcuts.&lt;/p&gt;&lt;p&gt;If you want more flexibility, you can enable &lt;span style=&quot; font-style:italic;&quot;&gt;Access for assistive devices&lt;/span&gt; in the system&apos;s Accessibility preferences. However, please note that this change also potentially allows malicious programs to read what is typed on your keyboard.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualmente, Mumble solo puede usar concurrentemente para los métodos abreviados globales botones del ratón y teclas modificadoras del teclado (Alt, Ctrl, Cmd, etc.).&lt;/p&gt;&lt;p&gt;Si desea más flexibilidad, puede activar &lt;span style=&quot; font-style:italic;&quot;&gt;Acceso para dispositivos de ayuda&lt;/span&gt; en las preferencias de accesibilidad del sistema. Sin embargo, por favor fíjese en que este cambio también permite potencialmente que programas malintencionados lean lo que se escribe en su teclado.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Open Accessibility Preferences</source>
-        <translation>Abrir preferencias de accesibilidad</translation>
     </message>
     <message>
         <source>Skip</source>
@@ -3866,10 +3878,6 @@ Sin esta opción habilitada, los métodos abreviados globales de Mumble en aplic
 <context>
     <name>GlobalShortcutConfig</name>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble can currently only use mouse buttons and keyboard modifier keys (Alt, Ctrl, Cmd, etc.) for global shortcuts.&lt;/p&gt;&lt;p&gt;If you want more flexibility, you can add Mumble as a trusted accessibility program in the Security &amp; Privacy section of your Mac&apos;s System Preferences.&lt;/p&gt;&lt;p&gt;In the Security &amp; Privacy preference pane, change to the Privacy tab. Then choose Accessibility (near the bottom) in the list to the left. Finally, add Mumble to the list of trusted accessibility programs.&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualmente, Mumble solo puede usar para los métodos abreviados globales botones del ratón y teclas modificadoras del teclado (Alt, Ctrl, Cmd, etc.).&lt;/p&gt;&lt;p&gt;Si desea más flexibilidad, puede añadir Mumble como programa de confianza en la sección de Seguridad y Privacidad de las Preferencias del Sistema Mac.&lt;p&gt;&lt;/p&gt; En el panel de preferencias de Seguridad y Privacidad, cambia a la pestaña de Privacidad. Elige Accesibilidad (en la parte baja) de la lista a la izquierda. FInalmente, añade a Mumble a la lista de programas de confianza para la accesibilidad&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
         <source>Shortcuts</source>
         <translation>Métodos abreviados</translation>
     </message>
@@ -3897,6 +3905,10 @@ Sin esta opción habilitada, los métodos abreviados globales de Mumble en aplic
     <message>
         <source>Shortcut input combinations</source>
         <translation>Combinaciones de entradas de accesos directos</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mumble can currently only use mouse buttons and keyboard modifier keys (Alt, Ctrl, Cmd, etc.) for global shortcuts.&lt;/p&gt;&lt;p&gt;If you want more flexibility, you can add Mumble as a trusted accessibility program in the Privacy &amp; Security section of your Mac&apos;s System Settings.&lt;/p&gt;&lt;p&gt;In System Settings, open Privacy &amp; Security, then scroll to find Accessibility in the list. Finally, add Mumble to the list of trusted accessibility programs.&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unassigned</source>
@@ -4145,7 +4157,7 @@ Este campo describe el tamaño de un dispositivo LCD. El tamaño se da, o bien e
     </message>
     <message>
         <source>Other self-muted/deafened</source>
-        <translation>Otro se enmudeció/ensordeció a sí mismo</translation>
+        <translation>Otro se silenció/ensordeció a sí mismo</translation>
     </message>
     <message>
         <source>User recording state changed</source>
@@ -4161,7 +4173,7 @@ Este campo describe el tamaño de un dispositivo LCD. El tamaño se da, o bien e
     </message>
     <message>
         <source>You self-muted</source>
-        <translation>Te has enmudecido</translation>
+        <translation>Te has silenciado</translation>
     </message>
     <message>
         <source>User muted (you)</source>
@@ -4177,7 +4189,7 @@ Este campo describe el tamaño de un dispositivo LCD. El tamaño se da, o bien e
     </message>
     <message>
         <source>You self-unmuted</source>
-        <translation>Te has desenmudecido</translation>
+        <translation>Te has desilenciado</translation>
     </message>
     <message>
         <source>You self-deafened</source>
@@ -5215,6 +5227,14 @@ La configuración solo se aplica a los mensajes nuevos, los que ya se muestran c
         <source>Restore window geometry on startup</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Whether to change the local volume adjustment for the selected user when scrolling the mouse wheel up (increase) or down (decrease) while Control is pressed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>CTRL + Scroll to change selected user&apos;s volume</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -5305,17 +5325,17 @@ La configuración solo se aplica a los mensajes nuevos, los que ya se muestran c
     <message>
         <source>Mute Self</source>
         <comment>Global Shortcut</comment>
-        <translation>Enmudecerse</translation>
+        <translation>Silenciarse</translation>
     </message>
     <message>
         <source>Set self-mute status.</source>
         <comment>Global Shortcut</comment>
-        <translation>Fija su estado de enmudecimiento.</translation>
+        <translation>Fija su estado de silencio.</translation>
     </message>
     <message>
         <source>This will set or toggle your muted status. If you turn this off, you will also disable self-deafen.</source>
         <comment>Global Shortcut</comment>
-        <translation>Esto establecerá o conmutará su estado de enmudecimiento. Si lo desactiva, también desactivará el ensordecimiento.</translation>
+        <translation>Esto establecerá o conmutará su estado de silencio. Si lo desactiva, también desactivará el ensordecimiento.</translation>
     </message>
     <message>
         <source>Deafen Self</source>
@@ -5330,7 +5350,7 @@ La configuración solo se aplica a los mensajes nuevos, los que ya se muestran c
     <message>
         <source>This will set or toggle your deafened status. If you turn this on, you will also enable self-mute.</source>
         <comment>Global Shortcut</comment>
-        <translation>Esto fijará o conmutará su estado de ensordecimiento. Si lo activa, también activara su enmudecimiento.</translation>
+        <translation>Esto fijará o conmutará su estado de ensordecimiento. Si lo activa, también activara su silencio.</translation>
     </message>
     <message>
         <source>Whisper/Shout</source>
@@ -5867,7 +5887,7 @@ La configuración solo se aplica a los mensajes nuevos, los que ya se muestran c
     </message>
     <message>
         <source>Mute yourself</source>
-        <translation>Se enmudece a sí mismo</translation>
+        <translation>Silenciarse a sí mismo</translation>
     </message>
     <message>
         <source>Mute or unmute yourself. When muted, you will not send any data to the server. Unmuting while deafened will also undeafen.</source>
@@ -7462,14 +7482,6 @@ en el menu contextual del canal.</translation>
         <translation>No enviar información de certificados al servidor y no almacenar las contraseñas. (No se guarda).</translation>
     </message>
     <message>
-        <source>&lt;b&gt;This will suppress identity information from the client.&lt;/b&gt;&lt;p&gt;The client will not identify itself with a certificate, even if defined, and will not cache passwords for connections. This is primarily a test-option and is not saved.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Esto suprime la información de identidad del cliente.&lt;/b&gt;&lt;p&gt;El cliente no se identificará con un certificado, incluso si está definido, y no almacenará las contraseñas de las conexiones. Se trata principalmente de una opción para pruebas y no se guarda.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>Suppress certificate and password storage</source>
-        <translation>Suprimir certificados y almacenamiento de contraseñas</translation>
-    </message>
-    <message>
         <source>&lt;b&gt;Type of proxy to connect through.&lt;/b&gt;&lt;br /&gt;This makes Mumble connect through a proxy for all outgoing connections. Note: Proxy tunneling forces Mumble into TCP compatibility mode, causing all voice data to be sent via the control channel.</source>
         <translation>&lt;b&gt;Tipo de proxy a través del que conectar&lt;/b&gt;&lt;br /&gt;Esto hace que Mumble se conecte a través de un proxy para todas las conexiones salientes. Nota: El uso de túneles proxy fuerza a Mumble al modo de compatibilidad TCP, causando que todos los datos de voz se envíen a través del canal de control.</translation>
     </message>
@@ -7610,6 +7622,14 @@ Impide que el cliente envíe información potencialmente identificable sobre el 
     <message>
         <source>Proxy password</source>
         <translation>Contraseña del proxy</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;This will suppress identity information from the client.&lt;/b&gt;&lt;p&gt;The client will not identify itself with a certificate, even if defined. This is primarily a test-option and is not saved.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Suppress certificate information</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -8585,8 +8605,8 @@ Para actualizar estos ficheros a la última versión, haga clic en el botón inf
         <translation>Dispositivo predeterminado</translation>
     </message>
     <message>
-        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Preferences -&gt; Security &amp; Privacy -&gt; Privacy -&gt; Microphone.</source>
-        <translation>El acceso al micrófono fue denegado. Por favor, permita a Mumble usar el micrófono cambiando los ajustes en Preferencias del sistema -&gt; Seguridad y Privacidad -&gt; Privacidad -&gt; Micrófono</translation>
+        <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Settings -&gt; Privacy &amp; Security -&gt; Microphone.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>If enabled this tries to cancel out echo from the audio stream.</source>
